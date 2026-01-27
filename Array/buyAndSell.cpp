@@ -15,4 +15,8 @@ int main(){
         cout<<bestBuy[i]<<" ";
     }
     cout<<endl;
+    for(int i=0;i<n;i++){
+        cout<<profit[i]<<" ";
+    }
+    cout<<endl;
 }
