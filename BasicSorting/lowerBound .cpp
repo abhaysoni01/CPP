@@ -1,10 +1,10 @@
 #include<iostream>
-using namespace std;
 #include<vector>
-int lowerBound(vector<int> arr,int x){
+using namespace std;
+int lowerBound1(vector<int> &arr,int x){
     int n = arr.size();
     int low = 0,high = n -1;
-    int ans = 0;
+    int ans = n;
     while(low <= high){
         int mid = (low + high)/2;
         if(arr[mid] >= x){
@@ -22,7 +22,7 @@ int main() {
     int n = arr.size();                     // Size of the array
     int x = 9;                              // Target value
 
-    int ind = lowerBound(arr,x);  // Call method
+    int ind = lowerBound1(arr,x);  // Call method
 
     cout << "The upper bound is the index: " << ind << "\n";  // Output result
     return 0;
