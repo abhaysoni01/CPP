@@ -24,6 +24,6 @@ int main() {
 
     int ind = lowerBound1(arr,x);  // Call method
 
-    cout << "The upper bound is the index: " << ind << "\n";  // Output result
+    cout << "The upper bound is the index: " << arr[ind] << "\n";  // Output result
     return 0;
 }
